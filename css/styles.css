@@ -1,3 +1,7 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #wrapper {
   align-items: center;
   display: flex;
