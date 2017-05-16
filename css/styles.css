@@ -1,0 +1,29 @@
+#wrapper {
+  align-items: center;
+  display: flex;
+  height: 96vh;
+  overflow: hidden;
+}
+
+#time {
+  flex: 1;
+  font-size: 300px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: darkorange;
+}
+
+.red {
+  background-color: red;
+}
+
+.text-white {
+  color: white;
+}
