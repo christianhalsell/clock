@@ -19,6 +19,7 @@
             time.className = 'text-white';
         } else if (h === 7 && m >= 25) {
             wrapper.className = 'red';
+            time.className = '';
         } else {
             wrapper.className = 'green';
             time.className = 'text-white';
