@@ -11,6 +11,10 @@
             time = document.getElementById('time'),
             wrapper = document.getElementById('wrapper');
 
+        if (h > 12) {
+            h = h - 12;
+        }
+
         time.innerHTML = h + ":" + m;
         // time.innerHTML = h + ":" + m + ":" + s;
 
