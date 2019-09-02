@@ -7,7 +7,6 @@
         var today = new Date(),
             h = today.getHours(),
             m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds()),
             time = document.getElementById('time'),
             wrapper = document.getElementById('wrapper');
 
@@ -20,20 +19,19 @@
         // m = checkTime(15);
 
         time.innerHTML = h + ":" + m;
-        // time.innerHTML = h + ":" + m + ":" + s;
 
-        if (h === 6 && m >= 45 && m <= 59) {
+        if (h === 6 && m >= 35 && m < 55) {
             wrapper.className = 'blue';
-            time.className = '';            
-        } else if (h === 7 && m >= 0 && m < 10) {
+            time.className = 'text-white';            
+        } else if ((h === 6 && m >= 55 && m <= 59) || (h === 7 && m >= 0 && m < 7)) {
             wrapper.className = 'yellow';
             time.className = '';            
-        } else if (h === 7 && m >= 10 && m < 15) {
+        } else if (h === 7 && m >= 7 && m < 15) {
             wrapper.className = 'orange';
             time.className = 'text-white';
         } else if (h === 7 && m >= 15 && m < 59) {
             wrapper.className = 'red';
-            time.className = '';
+            time.className = 'text-white';
         } else {
             wrapper.className = 'green';
             time.className = 'text-white';
