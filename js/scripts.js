@@ -22,7 +22,10 @@
         time.innerHTML = h + ":" + m;
         // time.innerHTML = h + ":" + m + ":" + s;
 
-        if (h === 7 && m >= 0 && m < 10) {
+        if (h === 6 && m >= 45 && m <= 59) {
+            wrapper.className = 'blue';
+            time.className = '';            
+        } else if (h === 7 && m >= 0 && m < 10) {
             wrapper.className = 'yellow';
             time.className = '';            
         } else if (h === 7 && m >= 10 && m < 15) {
