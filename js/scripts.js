@@ -26,7 +26,7 @@
         } else if ((h === 6 && m >= 50 && m <= 59) || (h === 7 && m >= 0 && m < 7)) {
             wrapper.className = 'yellow';
             time.className = '';            
-        } else if (h === 7 && m >= 7 && m < 15) {
+        } else if (h === 7 && m >= 5 && m < 15) {
             wrapper.className = 'orange';
             time.className = 'text-white';
         } else if (h === 7 && m >= 15 && m < 59) {
