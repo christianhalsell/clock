@@ -20,10 +20,10 @@
 
         time.innerHTML = h + ":" + m;
 
-        if (h === 6 && m >= 35 && m < 55) {
+        if (h === 6 && m >= 35 && m < 50) {
             wrapper.className = 'blue';
             time.className = 'text-white';            
-        } else if ((h === 6 && m >= 55 && m <= 59) || (h === 7 && m >= 0 && m < 7)) {
+        } else if ((h === 6 && m >= 50 && m <= 59) || (h === 7 && m >= 0 && m < 7)) {
             wrapper.className = 'yellow';
             time.className = '';            
         } else if (h === 7 && m >= 7 && m < 15) {
